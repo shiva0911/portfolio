@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+p {
+  text-align: justify;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h6 {
+  font-family: serif;
+  font-weight: bold;
+  color: #f0a04b;
+}
+h4 {
+  color: #fefbe9;
+}
+
+#about {
+  padding-top: 75px;
+  background-color: #f0a04b;
+}
+#services,
+#skill,
+#project {
+  background-color: black;
+}
+#contact {
+  background-color: #183a1d;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.textinput {
+  float: left;
+  width: 100%;
+  min-height: 100px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 356px) {
+  .btn {
+    font-size: 10px;
+  }
+}
